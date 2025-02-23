@@ -19,7 +19,7 @@ function añadirUsuarioArray() {
   console.log(arrayNombres);
 
   const li = document.createElement("li");
-  li.textContent = texto.value;
+  li.textContent = texto.value.toUpperCase();
   ul.appendChild(li);
   texto.value = "";
 }
@@ -28,7 +28,7 @@ function escorgerAmigo() {
   let amigo = arrayNombres[Math.floor(Math.random() * arrayNombres.length)];
   console.log(amigo);
   const liresultado = document.createElement("li");
-  liresultado.textContent = `su amigo secreto es ${amigo}`;
+  liresultado.textContent = `su amigo secreto es ${amigo.toUpperCase()}`;
   resultado.appendChild(liresultado);
  
 }
